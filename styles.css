@@ -1,0 +1,138 @@
+html{
+  scroll-behavior: smooth;
+}
+.navbar {
+  box-shadow: 2px 2px 5px #B3DCA2;
+  background: #000;
+  opacity: 0.5;
+}
+
+.navbar-brand {
+  font-family: 'Montserrat', sans-serif;
+}
+
+
+.header {
+  background: url("img/hero.jpg");
+  background-position: top;
+  height: 75vh;
+  width: 100%;
+}
+a{
+  color: white;
+}
+a:hover{
+  color: #777;
+}
+a.active{
+  color: #777;
+}
+.header-overlay {
+  background: rgba(111, 202, 134, 0.5);
+  height: 75vh;
+  width: 100%;
+}
+
+.header-content {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.header-title {
+  letter-spacing: 1rem;
+  font-size: 3rem;
+  -webkit-animation-name: moveInBottom;
+  animation-name: moveInBottom;
+  -webkit-animation-duration: 1s;
+  animation-duration: 2s;
+  -webkit-animation-timing-function: ease-out;
+  animation-timing-function: ease-out
+
+}
+
+.header-subtitle {
+  letter-spacing: 0.6rem;
+}
+
+.explore-title {
+  color: rgba(111, 202, 134, 1);
+  text-transform: uppercase;
+  margin-top: 3rem;
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+#explore {
+  margin-top: 20px;
+}
+
+#explore img {
+  margin-top: -50px;
+}
+
+#explore .card:hover {
+  background: rgba(111, 202, 134, 1);
+  color: #fff;
+}
+
+#explore .fab {
+  color: #fff;
+}
+
+#about{
+  background: url("../img/hero.jpg");
+  background-position: top;
+}
+.about-overlay{
+  background: rgba(230, 233, 234, 0.6);
+}
+.fas{
+  background: rgba(111, 202, 134, 1);
+  color: white;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+@-webkit-keyframes moveInBottom {
+  0% {
+    opacity: 0;
+    -webkit-transform: translateY(3rem);
+    transform: translateY(3rem)
+  }
+
+  100% {
+    opacity: 1;
+    -webkit-transform: translate(0);
+    transform: translate(0)
+  }
+}
+
+@keyframes fade-in {
+    from {opacity: 0; transform: scale(.7,.7)}
+    to {opacity: 1;}
+}
+
+.hidden {
+  opacity: 0;
+}
+
+.fade-in-element {
+  animation: fade-in 1.4s;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+  .card{
+    margin-top: 60px;
+  }
+  h1{
+    font-size: 1.5rem;
+  }
+  .mb-title{
+    font-size: 1.5rem;
+  }
+}
